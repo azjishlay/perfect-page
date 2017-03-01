@@ -1,0 +1,355 @@
+/* Global */
+
+body {
+  background: url('../images/stellas_menu_bg.png') left bottom no-repeat fixed;
+  background-size: contain;
+}
+
+@media screen and (min-width: 26em) {
+  body {
+    background-position: left center;
+    background-size: auto;
+  }
+} /* /mediaquery */
+
+.menu {
+  text-align: center;
+  padding: 0 0.5em;
+}
+
+.menu p {
+  font-size: 0.95em; /* 11pt/15px / 16px */
+}
+
+.menu footer {
+  font-weight: bold;
+}
+
+ul, li {
+  text-align: left;
+}
+
+.gv:before {
+  content: 'gv';
+  text-transform: uppercase;
+  font-size: 0.75em;
+  font-weight: normal;
+  color: gray;
+  margin-right: 0.5em;
+}
+
+.g:before {
+  content: 'g';
+  text-transform: uppercase;
+  font-size: 0.75em;
+  font-weight: normal;
+  color: gray;
+  margin-right: 0.5em;
+}
+
+.v:before {
+  content: 'v';
+  text-transform: uppercase;
+  font-size: 0.75em;
+  font-weight: normal;
+  color: gray;
+  margin-right: 0.5em;
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
+.small {
+  font-size: 0.75em;
+  font-style: initial;
+  font-weight: normal;
+}
+
+.sub {
+  font-size: 1em;
+  font-style: italic;
+  font-weight: inherit;
+}
+
+/* Headers */
+
+.menu h2 {
+  /* Uses default styling */
+}
+
+@media screen and (min-width: 26em) {
+  .menu h2 {
+    font-size: 3em; /* 36pt/48px / 16px */
+  }
+  .menu h2:before {
+    content: '{';
+    margin-right: 0.25em;
+  }
+  .menu h2:after {
+    content: '}';
+    margin-left: 0.25em;
+  }
+} /* /mediaquery */
+
+.menu-items {
+  border: 1px solid hotpink;
+}
+
+.subhead {
+  width: 100%;
+  overflow: hidden;
+}
+
+.subhead * {
+  display: inline-block;
+  position: relative;
+}
+
+.subhead *:before, .subhead *:after {
+  border-bottom: 1px solid #111;
+  content: '';
+  position: absolute;
+  width: 100%;
+  min-width: 200px;
+  max-width: 200px;
+  top: 50%;
+}
+
+.subhead *:before {
+  right: 100%;
+  margin-right: 1em;
+}
+
+.subhead *:after {
+  left: 100%;
+  margin-left: 1em;
+}
+
+.subhead h3 {
+  /* Uses default styling */
+}
+
+.subhead p {
+  font-size: 1em; /* 12pt/16px / 16px */
+}
+
+@media screen and (min-width: 26em) {
+  .subhead *:before {
+    right: 100%;
+    margin-right: 2em;
+  }
+  .subhead *:after {
+    left: 100%;
+    margin-left: 2em;
+  }
+  .subhead h3 {
+    font-size: 1.5em; /* 18pt/24px / 16px */
+  }
+  .subhead p {
+    font-size: 1.125em; /* 13.5pt/18px / 16px */
+  }
+} /* /mediaquery */
+
+/* Tidbits */
+
+.menu-item-name {
+  font-style: initial;
+  font-weight: bold;
+}
+
+.menu-item-price {
+  font-style: initial;
+  font-weight: normal;
+  font-size: 0.75em;
+  margin-left: 0.25em;
+}
+
+/* Layout */
+
+.menu-group {
+  padding-bottom: 1em;
+}
+
+.menu-item {
+  max-width: 100%;
+}
+
+.menu-group#classic {
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+.menu-group#classic > div {
+  width: 100%;
+  padding: 0;
+}
+
+.menu-group#classic > .menu-items:first-of-type {
+  margin: 0 0 -1em 0;
+}
+
+@media screen and (min-width: 44em) {
+  .menu-group#classic {
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .menu-group#classic > .subhead {
+    width: 100%;
+  }
+  .menu-group#classic > .menu-items {
+    width: 50%;
+  }
+  .menu-group#classic > .menu-items:first-of-type {
+    margin: 0;
+  }
+} /* /mediaquery */
+
+.menu-group#eggsaddons {
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.menu-group#eggsaddons > div {
+  width: 100%;
+  padding: 0;
+}
+
+@media screen and (min-width: 44em) {
+  .menu-group#eggsaddons {
+    -webkit-flex-direction: row;
+    flex-direction: row;
+  }
+  .menu-group#eggsaddons > div {
+    width: 30%;
+    max-width: 300px;
+  }
+} /* /mediaquery */
+
+.menu-group#ss {
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.menu-group#ss > div {
+  width: 100%;
+  padding: 0;
+}
+
+.menu-group#ss > .menu-items#soup {
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.menu-group#ss > .menu-items#soup:before, .menu-group#ss > .menu-items#soup:after {
+  display: block;
+  font-size: 5em;
+}
+
+.menu-group#ss > .menu-items#soup:before {
+  content: '{';
+}
+
+.menu-group#ss > .menu-items#soup:after {
+  content: '}';
+}
+
+@media screen and (min-width: 44em) {
+  .menu-group#ss {
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .menu-group#ss > .subhead {
+    width: 100%;
+  }
+  .menu-group#ss > .menu-items#soup {
+    width: 30%;
+  }
+  .menu-group#ss > .menu-items#salad {
+    width: 70%;
+  }
+} /* /mediaquery */
+
+.menu-group#swiches {
+
+}
+
+.menu-group#sides {
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+.menu-group#sides > div {
+  width: 100%;
+}
+
+.menu-group#sides ul {
+  padding: 0;
+  list-style: none;
+}
+
+.menu-group#sides li {
+  text-align: center;
+}
+
+.menu-group#sides > .menu-items {
+  margin: 0 0 -1em 0;
+}
+
+@media screen and (min-width: 44em) {
+  .menu-group#sides {
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+      
+  }
+  .menu-group#sides > .subhead {
+    width: 100%;
+  }
+  .menu-group#sides > .menu-items {
+    width: 100%;
+  }
+} /* /mediaquery */
+
+@media screen and (min-width: 58em) {
+  .menu-group#sides > .menu-items {
+    width: 25%;
+  }
+  .menu-group#sides li {
+    text-align: left;
+  }
+} /* /mediaquery */

@@ -37,24 +37,217 @@
 
           <!-- Content goes here -->
           <article>
-            <header>
-              <h1>Chapter I</h1>
-              <h2>Down the Rabbit-Hole</h2>
+
+            <header id="top">
+              <h1>Menus</h1>
+              <ul>
+                <li><a href="#brunch">Brunch</a></li>
+                <li>Dinner</li>
+                <li>Bar</li>
+                <li>Cafe</li>
+                <li>Graduation</li>
+              </ul>
             </header>
-            <p>Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, ‘and what is the use of a book,’ thought Alice ‘without pictures or conversations?’</p>
-            <p>So she was considering in her own mind (as well as she could, for the hot day made her feel very sleepy and stupid), whether the pleasure of making a daisy-chain would be worth the trouble of getting up and picking the daisies, when suddenly a White Rabbit with pink eyes ran close by her.
-            </p>
+
+            <div class="menu" id="brunch">
+              <h2 class="caps">Brunch</h2>
+
+              <div class="menu-group" id="classic">
+                <div class="subhead">
+                  <h3 class="caps">Classic Breakfast</h3>
+                </div><!-- /subhead -->
+                <div class="menu-items">
+                  <div class="menu-item">
+                    <p class="menu-item-name gv">Housemade Granola <span class="menu-item-price">5</span></p>
+                    <p class="menu-item-description">Toasted and honey-tossed rolled oats, with shredded coconut, cashews, pumpkin seeds & dried cherries</p>
+                    <p class="menu-item-description">Served with sliced apple & your choice of <b>almond milk</b> <span class="small">or</span> <b>cream</b></p>
+                  </div><!-- /menu-item -->
+                  <div class="menu-item">
+                    <p class="menu-item-name">Fruit & Granola Parfait <span class="menu-item-price">6</span></p>
+                    <p class="menu-item-description">Seasonal fruit, housemade granola & greek yogurt</p>
+                  </div><!-- /menu-item -->
+                  <div class="menu-item">
+                    <p class="menu-item-name gv">Quinoa Oatmeal <span class="menu-item-price">9</span></p>
+                    <p class="menu-item-description">Steel-cut oats & quinoa prepared with <b>almond milk</b> <span class="small">or</span> <b>cream</b>, topped with toasted cashews, sliced apple & cinnamon</p>
+                  </div><!-- /menu-item -->
+                  <div class="menu-item">
+                    <p class="menu-item-name v">Root Vegetable Hash <span class="menu-item-price">9</span></p>
+                    <p class="menu-item-description">Seasonal root vegetables, braised cabbage, crushed garlic, onions, potatoes & fresh herbs</p>
+                  </div><!-- /menu-item -->
+                </div><!-- /menu-items -->
+                <div class="menu-items">
+                  <div class="menu-item">
+                    <p class="menu-item-name">Egg Sandwich <span class="menu-item-price">7</span></p>
+                    <p class="menu-item-description">Two fried eggs, white cheddar & ham on a toasted english muffin</p>
+                    <p class="menu-item-description sub">Substitute Gimme Lean vegan sausage <span class="menu-item-price">(+1)</span></p>
+                  </div><!-- /menu-item -->
+                  <div class="menu-item">
+                    <p class="menu-item-name">French Toast <span class="menu-item-price">9</span></p>
+                    <p class="menu-item-description">Batter-dipped baguette with a housemade cashew butter & seasonal fruit jam</p>
+                  </div><!-- /menu-item -->
+                  <div class="menu-item">
+                    <p class="menu-item-name">Soft-shell Crab Benedict <span class="menu-item-price">12</span></p>
+                    <p class="menu-item-description">Two poached eggs over tempura fried soft-shell crab & a toasted english muffin, topped with hollandaise & fresh herbs</p>
+                  </div><!-- /menu-item -->
+                  <div class="menu-item">
+                    <p class="menu-item-name">Steak & Eggs <span class="menu-item-price">20</span></p>
+                    <p class="menu-item-description">5oz Ribeye with an espresso rub, demi-glace, two eggs, russet hash & toast</p>
+                  </div><!-- /menu-item -->
+                </div><!-- /menu-items -->
+              </div><!-- /menu-group -->
+
+              <div class="menu-group" id="eggs">
+                <div class="subhead">
+                  <h3 class="caps">Scrambles & Omelettes</h3>
+                </div><!-- /subhead -->
+                <div class="menu-items">
+                  <div class="menu-item">
+                    <p class="menu-item-name">3 Eggs, Any Way <span class="menu-item-price">10</span></p>
+                    <p class="menu-item-description">A hearty breakfast of three eggs prepared <b><i>any</i></b> style, served with toast & your choice of: <b>fresh greens</b> <span class="small">or</span> <b>russet potato hash</b></p>
+                    <p class="menu-item-description sub">Transform your 3 egg dish into an omelette or scramble of your own creation by choosing from the ingredients below</p>
+                    <div class="subhead">
+                      <p>Omelette & Scramble Additions</p>
+                    </div><!-- /subhead -->
+                    <div class="menu-group" id="eggsaddons">
+                      <div class="menu-item">
+                        <p class="caps">Cheese</p>
+                        <ul>
+                          <li><p class="menu-item-name">NYS White Cheddar <span class="menu-item-price">+2</span></p></li>
+                          <li><p class="menu-item-name">Brie <span class="menu-item-price">+1</span></p></li>
+                          <li><p class="menu-item-name">NYS Feta <span class="menu-item-price">+2</span></p></li>
+                          <li><p class="menu-item-name">Lively Run Chevre <span class="menu-item-price">+2</span></p></li>
+                          <li><p class="menu-item-name">Parmesan <span class="menu-item-price">+1.5</span></p></li>
+                        </ul>
+                      </div><!-- /menu-item -->
+                      <div class="menu-item">
+                        <p class="caps">Vegetable</p>
+                        <ul>
+                          <li><p class="menu-item-name">Crimini Mushrooms <span class="menu-item-price">+1</span></p></li>
+                          <li><p class="menu-item-name">Carmelized Onions <span class="menu-item-price">+1</span></p></li>
+                          <li><p class="menu-item-name">Roasted Broccoli <span class="menu-item-price">+1</span></p></li>
+                          <li><p class="menu-item-name">Peas <span class="menu-item-price">+1</span></p></li>
+                          <li><p class="menu-item-name">Fresh Herbs <span class="small">(parsley, chives, oregano) </span><span class="menu-item-price">+1</span></p></li>
+                          <li><p class="menu-item-name">Roasted Root Vegetables <span class="small">(seasonal) </span><span class="menu-item-price">+1</span></p></li>
+                        </ul>
+                      </div><!-- /menu-item -->
+                      <div class="menu-item">
+                        <p class="caps">Protein</p>
+                        <ul>
+                          <li><p class="menu-item-name">Bacon <span class="menu-item-price">+2</span></p></li>
+                          <li><p class="menu-item-name">Ham <span class="menu-item-price">+2</span></p></li>
+                          <li><p class="menu-item-name">Housemade Pork Sausage <span class="menu-item-price">+2</span></p></li>
+                          <li><p class="menu-item-name">Gimme Lean Vegan Sausage <span class="menu-item-price">+2</span></p></li>
+                        </ul>
+                      </div><!-- /menu-item -->
+                    </div><!-- /menu-group -->
+                  </div><!-- /menu-item -->
+                </div><!-- /menu-items -->
+              </div><!-- /menu-group -->
+
+              <div class="menu-group" id="ss">
+                <div class="subhead">
+                  <h3 class="caps">Soup & Salad</h3>
+                </div><!-- /subhead -->
+                <div class="menu-items">
+                  <div class="menu-item">
+                    <p class="menu-item-name gv">Soup Du Jour <span class="small caps">Cup </span><span class="menu-item-price">5 </span><span class="small caps">Bowl </span><span class="menu-item-price">7</span></p>
+                    <p class="menu-item-description">Your choice of our two rotating soups</p>
+                    <p class="menu-item-description">See your server for our current selection</p>
+                  </div><!-- /menu-item -->
+                </div><!-- /menu-items -->
+                <div class="menu-items">
+                  <div class="menu-item">
+                    <p class="menu-item-description sub">Add to any salad: <b>pulled chicken confit</b> <span class="small">or</span> <b>housemade black bean burger</b> <span class="menu-item-price">+5</span></p>
+                  </div><!-- /menu-item -->
+                  <div class="menu-item">
+                    <p class="menu-item-name gv">Fresh Garden Salad <span class="small caps">Half </span><span class="menu-item-price">7 </span><span class="small caps">Full </span><span class="menu-item-price">13</span></p>
+                    <p class="menu-item-description">Fresh field greens tossed in a champagne vinaigrette with carrots, roasted beets, roasted broccoli & rosemary croutons</p>
+                  </div><!-- /menu-item -->
+                  <div class="menu-item">
+                    <p class="menu-item-name gv">Chop Salad <span class="menu-item-price">15</span></p>
+                    <p class="menu-item-description">Grilled romaine hearts, ham, peas, gorgonzola, fresh herbs, hard-boiled egg & fried shallots</p>
+                    <p class="menu-item-description">Served with ranch & french dressings</p>
+                  </div><!-- /menu-item -->
+                  <div class="menu-item">
+                    <p class="menu-item-name gv">Spinach Salad <span class="menu-item-price">14</span></p>
+                    <p class="menu-item-description">Spinach, strawberries, bleu cheese & toasted almonds</p>
+                    <p class="menu-item-description">Served with a lemon vinaigrette & balsamic reduction</p>
+                  </div><!-- /menu-item -->
+                </div><!-- /menu-items -->
+              </div><!-- /menu-group -->
+
+              <div class="menu-group" id="swiches">
+                <div class="subhead">
+                  <h3 class="caps">Sandwiches</h3>
+                </div><!-- /subhead -->
+                <div class="menu-items">
+                  <div class="menu-item">
+                    <p class="menu-item-description sub">All sandwiches & burgers served with a side of mixed field greens & housemade chips</p>
+                    <p class="menu-item-description sub">Substitute <b>hand-cut</b> <span class="small">or</span> <b>sweet potato fries</b> <span class="menu-item-price">+1</span></p>
+                  </div><!-- /menu-item -->
+                  <div class="menu-item">
+                    <p class="menu-item-name v">Beet Sandwich <span class="menu-item-price">13</span></p>
+                    <p class="menu-item-description">Roasted beets, carrots, peas, mixed greens, fried shallots & whole grain mustard served chilled on toasted whole wheat</p>
+                  </div><!-- /menu-item -->
+                  <div class="menu-item">
+                    <p class="menu-item-name">Chicken Confit Sandwich <span class="menu-item-price">12</span></p>
+                    <p class="menu-item-description">Pulled chicken confit tossed with lemon vinaigrette, mixed greens, grated parmesan, sliced pickles & saffron aioli on baguette</p>
+                  </div><!-- /menu-item -->
+                  <div class="menu-item">
+                    <p class="menu-item-name v">House Burger <span class="menu-item-price">13</span></p>
+                    <p class="menu-item-description">Choice of <b>local beef</b> <span class="small">or</span> <b>black bean burger</b> with local white cheddar, pickles, shredded romaine, fried shallots & saffron aioli on a sesame honey roll</p>
+                  </div><!-- /menu-item -->
+                </div><!-- /menu-items -->
+              </div><!-- /menu-group -->
+
+              <div class="menu-group" id="sides">
+                <div class="subhead">
+                  <h3 class="caps">Sides</h3>
+                </div><!-- /subhead -->
+                <div class="menu-items">
+                  <div class="menu-item">
+                    <ul>
+                      <li><p class="menu-item-name gv">Greens <span class="menu-item-price">6</span></p></li>
+                      <li><p class="menu-item-name gv">Fruit <span class="menu-item-price">5</span></p></li>
+                      <li><p class="menu-item-name gv">Russet Hash <span class="menu-item-price">4</span></p></li>
+                    </ul>
+                  </div><!-- /menu-item -->
+                  <div class="menu-item">
+                    <ul>
+                      <li><p class="menu-item-name gv">Hand-cut Fries <span class="menu-item-price">4/8</span></p></li>
+                      <li><p class="menu-item-name v">Toast <span class="menu-item-price">2</span></p></li>
+                      <li><p class="menu-item-name v">English Muffin <span class="menu-item-price">3</span></p></li>
+                      <li><p class="menu-item-name g">Two Eggs <span class="menu-item-price">4</span></p></li>
+                    </ul>
+                  </div><!-- /menu-item -->
+                  <div class="menu-item">
+                    <ul>
+                      <li><p class="menu-item-name">Hollandaise <span class="menu-item-price">2</span></p></li>
+                      <li><p class="menu-item-name g">Yogurt <span class="menu-item-price">3.5</span></p></li>
+                      <li><p class="menu-item-name">Bacon <span class="menu-item-price">5</span></p></li>
+                      <li><p class="menu-item-name">Ham <span class="menu-item-price">4</span></p></li>
+                    </ul>
+                  </div><!-- /menu-item -->
+                  <div class="menu-item">
+                    <ul>
+                      <li><p class="menu-item-name">Housemade Pork Sausage <span class="menu-item-price">5</span></p></li>
+                      <li><p class="menu-item-name gv">Gimme Lean Vegan Sausage <span class="menu-item-price">4</span></p></li>
+                    </ul>
+                  </div><!-- /menu-item -->
+                </div><!-- /menu-items -->
+              </div><!-- /menu-group -->
+
+              <div class="menu-footer">
+                <p class="sub">A gratuity of 20% will be added to each check. To make your dining experience the best possible, please specify to servers if you are vegan, vegetarian or if you have any allergies or health concerns so we can better meet your needs.</p>
+                <p><span class="v">= Menu item is (or can be made) vegan </span><span class="g">= Menu item is (or can be made) gluten free </span></p>
+              </div><!-- /menu-footer -->
+            </div><!-- /menu -->
+
           </article>
 
         </section><!-- /main-content -->
       </div><!-- /content -->
     </div><!-- /main -->
-    <footer class="clearfix">
-      <ul class="menu">
-        <li class="first"><a href="../index.html">Home</a></li>
-        <li class="last"><a href="#page">Top</a></li>
-      </ul>
-    </footer>
   </div><!-- /page -->
 
   <script src="../assets/js/jquery-1.11.0.min.js"></script>

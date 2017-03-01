@@ -1,0 +1,64 @@
+.gv:before {
+  content: 'gv';
+  text-transform: uppercase;
+  font-size: 0.75em;
+  font-weight: normal;
+  color: gray;
+  margin-right: 0.5em;
+}
+
+.g:before {
+  content: 'g';
+  text-transform: uppercase;
+  font-size: 0.75em;
+  font-weight: normal;
+  color: gray;
+  margin-right: 0.5em;
+}
+
+.v:before {
+  content: 'v';
+  text-transform: uppercase;
+  font-size: 0.75em;
+  font-weight: normal;
+  color: gray;
+  margin-right: 0.5em;
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
+.small {
+  font-size: 0.75em;
+  font-style: initial;
+  font-weight: normal;
+}
+
+.sub {
+  font-size: 1em;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.menu h2:before {
+  content: '{';
+  margin-right: 0.25em;
+}
+
+.menu h2:after {
+  content: '}';
+  margin-left: 0.25em;
+}
+
+.menu-item-name {
+  font-style: initial;
+  font-weight: bold;
+}
+
+.menu-item-price {
+  font-style: initial;
+  font-weight: normal;
+  font-size: 0.75em;
+  margin-left: 0.25em;
+}
